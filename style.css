@@ -1,4 +1,4 @@
-@font-face {
+@@font-face {
 	font-family: myFirstFont;
 	src: url(Fonts/Quicksand-VariableFont_wght.ttf);
   }
@@ -6,6 +6,17 @@
 .second-header-top img{
   height: 160px;
   padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .second-header-top img{
+    height: 15vh;
+  }
+}
+@media (max-width: 400px) {
+  .second-header-top img{
+    height: 13vh;
+  }
 }
 
 .second-header-top {
@@ -198,7 +209,8 @@
 }
 
 .carousel-item img {
-	height: 625px;
+	width: 100%;
+  height: auto;
   }
 
 .img-fluid {
@@ -544,3 +556,4 @@
       border-radius: 0;
       background-position: 100% center;
   }
+
