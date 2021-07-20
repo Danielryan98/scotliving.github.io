@@ -127,6 +127,7 @@
 }
 
 .linear-wipe {
+  font-family: myFirstFont;
   background: linear-gradient(to right, #353745 80%, silver 85%, silver 90%, #353745 100%);
   background-size: 200% auto;
   color: #000;
@@ -170,7 +171,6 @@
     position: relative;
     margin: auto;
     padding-top: 3px;
-    padding-bottom: 25px;
 }
 
 .carousel-inner {
@@ -227,33 +227,77 @@
   }
 }
 
-.imagelist {
-  font-size: 0;
+.image-row {
+  max-width: 100%;
   text-align: center;
-  margin: auto;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
 }
 
-.imagelist a {
-  margin: 20px;
-  padding-bottom: 20px;
+@media (max-width: 1000px) {
+  .image-row {
+    
+  }
+}
+
+
+.image-row img {
+  width: 351px;
+  height: auto;
+  max-width: 24%;
+  max-height: auto;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+.image-row a {
   position: relative;
+  width: 351px;
+  height: auto;
+  max-width: 24%;
+  max-height: auto;
 }
 
-.imagelist a .btn{
+
+.image-row a .btn{
   position: absolute;
   z-index: 1;
-  right: 28%;
-  top: 400%;
+  right: 35%;
+  left: 35%;
+  top: 50%;
   border-color: white;
   color: white;
   border-radius: 0 !important;
 }
 
-.imagelist a .btn:hover {
+@media (max-width: 1300px) {
+  .image-row .btn{
+    right: 15%;
+    left: 25%;
+    top: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .image-row .btn{
+    right: 5%;
+    left: 25%;
+    top: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .image-row .btn{
+    left: 5%;
+    top: 50%;
+  }
+}
+
+.image-row a .btn:hover {
   background-color: white;
   border-color: white;
   color: black;
-}
+} 
 
 .map-container {
   display: flex;
@@ -270,17 +314,22 @@
   background-color: #bfd6d9;
   border-radius: 30px 30px 30px 30px;
   font-family: myFirstFont;
+  height: auto;
 }
 
 .business-info h1 {
   text-align: center;
   font-weight: 600;
   color: #353745;
+  font-size: 1.6vw;
+  white-space: nowrap;
 }
 
 .business-info h2 {
   text-align: justify;
   color: #353745;
+  font-size: 1.6vw;
+  white-space: nowrap;
 }
 
 .opening-times {
@@ -303,16 +352,19 @@
 .address h3 {
   font-weight: 600;
   color: #353745;
+  font-size: 1.6vw;
+  white-space: nowrap;
 }
 
 .map-div {
   padding-left: 25px;
+  width: 50%;
 }
 
-/* .map {
-  display: block;
-  margin: auto !important;
-} */
+.map {
+  width: 100%;
+  height: 100%;
+}
 
 
 
@@ -461,3 +513,4 @@
       border-radius: 0;
       background-position: 100% center;
   }
+
