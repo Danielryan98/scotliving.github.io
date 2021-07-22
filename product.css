@@ -219,10 +219,39 @@
   }
 }
 
+.card-body-one {
+  padding-top: 1.25% !important;
+  padding-bottom: 1.25% !important;
+  padding-left: 1.25% !important;
+  padding-right: 1.25% !important;
+}
+
+.card-body-two {
+  padding-bottom: 1.25% !important;
+  padding-left: 1.25% !important;
+  padding-right: 1.25% !important;
+}
+
+#card-two {
+  padding-top: 2%;
+}
+
+#adOne {
+  display: block;
+  margin: auto !important;
+}
+#adTwo {
+  display: block;
+  margin: auto !important;
+}
+
 @media (max-width: 1400px) {
   .column {
     width: 100%;
   }
+  .card-body-one {
+    padding-bottom: 0 !important;
+  }
   #card-one {
     margin: auto;
     min-width: 100%;
@@ -232,31 +261,47 @@
     border-left: none;
     min-width: 100%;
   }
+  .card-body-two {
+    max-width: 100%;
+  }
+  #card-one {
+    margin: 0 !important;
+    max-width: 100%;
+  }
+  #card-two {
+    margin: 0 !important;
+    border-left: none;
+    max-width: 100%;
+  }
   #adOne {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin: auto;
+    width: 60%;
+    height: auto;
   }
   #adTwo {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin: auto;
+    width: 60%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  #adOne {
+    width: 100%;
+    height: auto;
+  }
+  #adTwo {
+    width: 100%;
+    height: auto;
   }
 }
 
-@media (max-width: 1000px) {
+/* @media (min-width: 1000px) {
   .column {
     width: 100%;
   }
-  #card-one {
-    margin: auto;
-    max-width: 100%;
-  }
-  #card-two {
-    margin: auto;
-    border-left: none;
-    max-width: 100%;
-  }
+  
   #adOne {
     max-width: 100%;
     display: block;
@@ -269,20 +314,18 @@
   margin-left: auto;
   margin-right: auto;
   }
-}
+} */
 
 .card-img-top {
   margin: auto;
   max-width: 100%;
-  height: 700px;
+  height: auto;
   width: auto;
 }
 
 .small-img-row {
   display: flex;
   justify-content: space-between;
-  padding-top: 1%;
-  padding-bottom: 1%;
 }
 
 .small-img-col {
@@ -294,8 +337,40 @@
   margin: auto;
 }
 
-#product-name {
-  background-color: #353745 !important;
+#productName {
+  /* background-color: #353745 !important; */
+  color: #353745;
+  padding: 1vh;
+  font-family: myFirstFont;
+  font-weight: 700;
+  font-size: 175%;
+  margin-bottom: 0 !important;
+  /* white-space: nowrap; */
+}
+@media (max-width: 678px) {
+  #productName {
+    font-size: 150%;
+  }
+}
+@media (max-width: 585px) {
+  #productName {
+    font-size: 125%;
+  }
+}
+@media (max-width: 490px) {
+  #productName {
+    font-size: 100%;
+  }
+}
+@media (max-width: 400px) {
+  #productName {
+    font-size: 90%;
+  }
+}
+@media (max-width: 360px) {
+  #productName {
+    font-size: 80%;
+  }
 }
 
 #card-one {
@@ -312,6 +387,7 @@
   border-bottom: none; 
   border-radius: 0 !important;
   margin-left: 21px;
+  padding-top: 0 !important;
 }
 
 #card-two img {
@@ -320,6 +396,12 @@
 
 .product-price{
   margin-left: 20px;
+  margin-bottom: 0 !important;
+  color: rgb(211, 19, 19);
+  padding: 1vh;
+  font-family: myFirstFont;
+  font-weight: 1000;
+  font-size: 175%;
 }
 
 /* Style buttons */
