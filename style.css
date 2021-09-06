@@ -1218,7 +1218,7 @@
     font-size: 70% !important;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 435px) {
   #header-product-name{
     font-size: 60% !important;
   }
