@@ -18,7 +18,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color: #bfd6d9">
 	<section id="home-page" style="background-color: #bfd6d9">
 		<!-- Header -->
 		<header>
@@ -48,7 +48,7 @@
 						</div>
 						<div class="row">
 							<div class="item px-2" style="margin: auto; height: 25px;">
-								<p class="linear-wipe" onclick="doScrolling('#map-container', 1000)"><img src="Assets/General_Icons/placeholder.png" alt="Location" height="25px">Newton Stewart</p>
+								<a href="index.html#map-container"><p class="linear-wipe"><img src="Assets/General_Icons/placeholder.png" alt="Location" height="25px">Newton Stewart</p></a>
 							</div>
 						</div>
 					</div>
@@ -154,7 +154,7 @@
 					<a class="nav-link" href="#">Mattresses</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#">Help</a>
+					<a id="checkout-link" class="nav-link" href="cart.html">Checkout</a>
 				  </li>
 			  </ul>
 			</div>
@@ -172,29 +172,44 @@
 						</div>
 						<div class="small-img-col">
 						  <img id="photoTwo" src="" onclick="changeImage(this)" alt="Sofa" width="100%" class="small-img">
-					  </div>
-					  <div class="small-img-col">
+					  	</div>
+					  	<div class="small-img-col">
 						  <img id="photoThree" src="" onclick="changeImage(this)" alt="Sofa" width="100%" class="small-img">
-					  </div>
-					  <div class="small-img-col">
+					  	</div>
+					  	<div class="small-img-col">
 						  <img id="photoFour" src="" onclick="changeImage(this)" alt="Sofa" width="100%" class="small-img">
-					  </div>
+					 	</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="column-two" class="column">
 			<div id="card-two" class="card" style="width: 372px; background-color: #bfd6d9;">
-				<h5 id="price" class="product-price"></h5>
-				<div class="card-body-two">
-					<button class="btn-buy"><em class="fa fa-shopping-basket fa-lg" style="padding-right: 3%;"></em> Add to Basket</button>
+				<div class="card-body-two" style="padding-top: 1.25%;">
+					<div class="card" style="border: none; background-color: #353745;">
+						<div class="row" style="width: 100%; margin: auto; ">
+							<div class="column" style="color: rgb(255, 0, 0); font-weight: 900; width: 100%;">
+								<h5 id="price" class="product-price"></h5>
+							</div>
+						</div>
+						<p id="name-of-product" style="color: white; padding-left: 5%; padding-right: 5%; font-weight: 500;">Product Name</p>
+						<p style="color: white; padding-left: 5%; padding-right: 5%; max-width: fit-content; text-align: justify;">Shown here as a left hand facing chaise also available as right hand facing. Available in Lime Wash and Walnut feet at no extra cost. 
+							Comes with soft fibre-filled cushions as standard for a comfy and relaxed feel - Or choose fibre encore seat filling: a foam core in a soft continental quilt wrap that will keep its shape beautifully through the years (at extra cost)
+							Features removable arms for ease of delivery
+							Each Sofa, Cuddler and Chair comes with the Joules yellow hare back foot
+							Joules branded labels</p>
+					</div>
+				</div>
+				<div id="basket-phone-container" class="basket-phone-container">
+					<button id="buy-btn" class="btn-buy" onclick="setColour()";><em class="fa fa-shopping-basket fa-lg" style="padding-right: 3%;"></em> Add to Basket</button>
 					<button class="btn-phone"><em class="fa fa-phone fa-lg" style="padding-right: 2%; padding-left: 1%;"></em> Order by Phone</button>
 					<img id="adOne" src="Pictures/sale.png" alt="">
 					<img id="adTwo" src="Pictures/chair.png" alt="">
 				</div>
 			</div>
 		</div>
-	  </div>
+	</div>
+	
 
 		<!-- The Modal -->
 		<div id="myModal" class="product-modal">
@@ -208,6 +223,7 @@
 		<!-- Optional JavaScript -->
 		<script type="text/javascript" src='products.js'> </script>
 		<script type="text/javascript" src='product_page.js'> </script>
+		<!-- <script type="text/javascript" src='cart.js'> </script> -->
 
 		 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

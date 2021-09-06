@@ -43,6 +43,8 @@
   margin: auto;
 }
 
+
+
 @media (min-width: 992px){
   .navbar-search {
     display: none !important;
@@ -197,21 +199,39 @@
   background-color: #353745;
 }
 
+.navbar-nav .nav-item #checkout-link {
+  margin: auto;
+  background-color: rgb(10, 75, 0);
+}
+
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     background-color: white;
+}
+
+.navbar-custom .nav-item.active #checkout-link,
+.navbar-custom .nav-item:hover #checkout-link {
+    background-color: green;
 }
 
 .navbar-custom .navbar-nav .nav-item .nav-link {
     color: white;
 }
   
+.navbar-custom .navbar-nav .nav-item #checkout-link {
+  color: white;
+  font-weight: 400;
+}
   
 .nav-link {
   width: 127px;
   color: white;
 }
   
+#checkout-link {
+  color: black;
+}
+
 @media (max-width: 1420px) {
   .nav-link {
     width: fit-content;
@@ -227,6 +247,12 @@
 }
 
 .card-body-two {
+  padding-bottom: 1.25% !important;
+  padding-left: 1.25% !important;
+  padding-right: 1.25% !important;
+}
+
+.basket-phone-container {
   padding-bottom: 1.25% !important;
   padding-left: 1.25% !important;
   padding-right: 1.25% !important;
@@ -395,10 +421,11 @@
 }
 
 .product-price{
-  margin-left: 20px;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   margin-bottom: 0 !important;
   color: rgb(211, 19, 19);
-  padding: 1vh;
   font-family: myFirstFont;
   font-weight: 1000;
   font-size: 175%;
@@ -414,13 +441,13 @@
   text-align: start;
   cursor: pointer; /* Mouse pointer on hover */
   min-width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 1.25%;
   border-radius: 3px;
 }
 
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: RoyalBlue;
+.btn-buy:focus {
+  border: none;
+  outline: none !important;
 }
 
 .btn-phone {
@@ -433,6 +460,11 @@
   cursor: pointer; /* Mouse pointer on hover */
   min-width: 100%;
   border-radius: 3px;
+}
+
+.btn-phone:focus {
+  border: none;
+  outline: none !important;
 }
 
 /* The Modal (background) */
@@ -557,3 +589,4 @@
       border-radius: 0;
       background-position: 100% center;
   }
+
